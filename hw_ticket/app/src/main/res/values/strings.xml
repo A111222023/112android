@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Buy_Tickets</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="regularticket">Regular Tickets\n500</string>
+    <string name="childticket">Children Tickets\n250</string>
+    <string name="studentticket">Student Tickets\n400</string>
+    <string name="labgender">labgender</string>
+    <string name="labticket">labticket</string>
+    <string name="labSheetsPurchased">labSheetsPurchased</string>
+    <string name="submit">submit</string>
+</resources>
