@@ -18,7 +18,7 @@ public class OpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_opactivity);
+        setContentView(R.layout.activity_op);
 
         // 初始化UI元素
         radioGroup = findViewById(R.id.rg);
