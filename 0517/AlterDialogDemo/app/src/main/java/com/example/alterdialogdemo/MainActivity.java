@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class MainActivity extends AppCompatActivity implements DialogInterface.OnClickListener,DialogInterface.OnMultiChoiceClickListener {
 
     private String[] items = {"Samsung", "Oppo", "Apple", "ASUS"};
     private boolean[] itemsChecked = {false, true, false, false};
@@ -97,14 +97,22 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
             case 2:
                 findViewById(R.id.btnColor).setBackgroundColor(Color.GREEN);
                 break;
-        }        String msg="";
-        switch (which){
-            case DialogInterface.BUTTON_POSITIVE:
-                for(int index=0;index<items.length;index++){
-                    if (itemsChecked[index])
-                        msg+=items[index]+"\n";
-                }
-               // TextView.txvShow=(TextView)
         }
+
+        String msg = "";
+        switch (which) {
+            case DialogInterface.BUTTON_POSITIVE:
+                for (int index = 0; index < items.length; index++) {
+                    if (itemsChecked[index])
+                        msg += items[index] + "\n";
+                }
+                // Do something with msg
+                break;
+        }
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+
     }
 }
